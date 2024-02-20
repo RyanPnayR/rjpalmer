@@ -8,7 +8,7 @@ class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justif
   <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
     Full Stack Engineer
   </h2>
-  <p class="mt-4 max-w-xs leading-normal">I build things.</p>
+  <p class="mt-4 max-w-xs leading-normal">I'm a versatile developer crafting bespoke web and mobile solutions.</p>
   <nav class="nav hidden lg:block" aria-label="In-page jump links">
     <ul class="mt-16 w-max">
       <li>
@@ -48,7 +48,7 @@ class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justif
   <li class="mr-5 shrink-0 text-xs">
     <a
       class="block hover:text-slate-200"
-      href="https://github.com/bchiang7"
+      href="https://github.com/RyanPnayR"
       target="_blank"
       rel="noreferrer noopener"
       aria-label="GitHub (opens in a new tab)"
@@ -70,7 +70,7 @@ class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justif
   <li class="mr-5 shrink-0 text-xs">
     <a
       class="block hover:text-slate-200"
-      href="https://www.linkedin.com/in/bchiang7/"
+      href="https://www.linkedin.com/in/ryanpnayr/"
       target="_blank"
       rel="noreferrer noopener"
       aria-label="LinkedIn (opens in a new tab)"
@@ -92,7 +92,7 @@ class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justif
   <li class="mr-5 shrink-0 text-xs">
     <a
       class="block hover:text-slate-200"
-      href="https://codepen.io/bchiang7"
+      href="https://codepen.io/RyanPnayR"
       target="_blank"
       rel="noreferrer noopener"
       aria-label="CodePen (opens in a new tab)"
@@ -118,7 +118,7 @@ class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justif
   <li class="mr-5 shrink-0 text-xs">
     <a
       class="block hover:text-slate-200"
-      href="https://instagram.com/bchiang7"
+      href="https://instagram.com/ryanjcomedy"
       target="_blank"
       rel="noreferrer noopener"
       aria-label="Instagram (opens in a new tab)"

@@ -1,5 +1,7 @@
 <script lang="ts">
 	import TimelineEntryCard from '$lib/components/ui/timeline-entry-card/timeline-entry-card.svelte';
+	import resume from '$lib/assests/Resume_Ryan_Palmer.pdf'
+
 </script>
 
 <section
@@ -17,24 +19,63 @@
 	<div>
 		<ol class="group/list">
 			<li class="mb-12">
-				<TimelineEntryCard></TimelineEntryCard>
+				<TimelineEntryCard
+					timeFrame="Apr 2022 — Mar 2023"
+					role="Senior Software Engineer"
+					companyName="Level Technology"
+					description="Built out modern online banking solutions for gig workers via Plaid,
+					Unit, and Argyle. Set up automated syncs for customer support for tools like Zendesk and Hubspot with our private systems."
+					technologies={["React", "Kotlin", "Python", "AWS", "Postgres"]}
+					companyWebsite="https://www.levelgoals.com"
+				></TimelineEntryCard>
 			</li>
 			<li class="mb-12">
 				<TimelineEntryCard
-					timeFrame="July — Dec 2017"
-					role="UI Engineer Co-op"
-					companyName="Apple"
-					description="Developed and styled interactive web apps for Apple Music, including the
-      user interface of Apple Music’s embeddable web player widget for
-      in-browser user authorization and full song playback."
-					technologies={['Ember', 'SCSS', 'JavaScript', 'MusicKit.js']}
+					timeFrame="Jul 2021 — Jun 2022"
+					role="Senior Software Engineer"
+					companyName="Live Person/Tenfold"
+					description="Lead a team of engineers to build out Tenfold's Webex phone integration. Developed transcribing live agent calls to Salesforce with a custom integration."
+					technologies={["Angular", "Express", "Node.js", "GCP", "AWS", "MongoDB"]}
+					companyWebsite="https://www.tenfold.com"
+				></TimelineEntryCard>
+			</li>
+			<li class="mb-12">
+				<TimelineEntryCard
+					timeFrame="Feb 2019 — Jul 2021"
+					role="Full Stack Software Engineer"
+					companyName="Redeapp"
+					description="Performed web app migration from Angular.js to modern angular and established end too end testing in cypress. Lead Redeapp's Android development by building out, testing, and deploying changes for their messaging platform."
+					technologies={["Angular", "Kotlin", "Java", "Python", "AWS", "Postgres", "Android"]}
+					companyWebsite="https://www.redeapp.com"
+				></TimelineEntryCard>
+			</li>
+			<li class="mb-12">
+				<TimelineEntryCard
+					timeFrame="Jul 2021 — Jun 2022"
+					role="Software Engineer"
+					companyName="Level 12"
+					description="Created new and maintained old web apps for a consulting firm withing strict timeframes and budgets. Maintained product quality by keeping at least 90% automated tests coverage."
+					technologies={["Python", "React", "Linode", "SQLAlchemy", "Postgres"]}
+					companyWebsite="https://www.level12.io"
+				></TimelineEntryCard>
+			</li>
+			<li class="mb-12">
+				<TimelineEntryCard
+					timeFrame="Aug 2016 — Oct 2017"
+					role="Senior Software Engineer"
+					companyName="Astronomer"
+					description="Created and maintained containerized Node.js integrations and libraries for Astronomers open sourced Analytics.js
+					Platform. Designed Airflow data pipelines written in Node.js and python connecting external data sources to databases sending up
+					to millions of events with test coverage in Mocha, Chai, and Nock."
+					technologies={["Javascript", "Express", "Node.js", "Python", "AWS", "Postgres", "MongoDB", "Airflow", "Analytics.js"]}
+					companyWebsite="https://www.Astronomer.io"
 				></TimelineEntryCard>
 			</li>
 		</ol>
 		<div class="mt-12">
 			<a
 				class="group/link inline-flex items-baseline text-base font-medium font-semibold leading-tight text-slate-200 text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-				href="/resume.pdf"
+				href={resume}
 				target="_blank"
 				rel="noreferrer noopener"
 				aria-label="View Full Résumé (opens in a new tab)"

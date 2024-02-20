@@ -29,7 +29,7 @@ aria-label="Selected projects"
       photoSrcSet='{small} 500w, {med} 1000w, {large} 2000w' />
     </li>
   </ul>
-  <div class="mt-12">
+  <!-- <div class="mt-12">
     <a
       class="group inline-flex items-center font-medium font-semibold leading-tight text-slate-200 text-slate-200"
       aria-label="View Full Project Archive"
@@ -58,6 +58,6 @@ aria-label="Selected projects"
         ></span
       ></a
     >
-  </div>
+  </div> -->
 </div>
 </section>

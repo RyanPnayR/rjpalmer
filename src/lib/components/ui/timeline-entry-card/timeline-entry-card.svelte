@@ -1,27 +1,15 @@
 <script lang="ts">
 	import type { HTMLAttributes } from 'svelte/elements';
 
-	export let timeFrame = '2018 — Present';
-	export let role = 'Lead Engineer';
-	export let companyName = 'Upstatement';
+	export let timeFrame = 'Month year — Present';
+	export let role = 'The Job';
+	export let companyName = 'Company Name';
 	export let description =
-		'Build, style, and ship high-quality websites, design systems, mobile apps, and digital \
-		experiences for a diverse array of projects for clients including Harvard Business School, \
-		Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, \
-		and more. Provide leadership within engineering department through close collaboration, \
-		knowledge shares, and spearheading the development of internal tools.';
+		'Description';
 	export let technologies = [
-		'Javascript',
-		'TypeScript',
-		'HTML & SCSS',
-		'React',
-		'Next.js',
-		'React Native',
-		'WordPress',
-		'Contentful',
-		'Node.js',
-		'PHP'
+		'Javascript'
 	];
+	export let companyWebsite = '';
 </script>
 
 <div
@@ -41,10 +29,10 @@
 			<div>
 				<a
 					class="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-					href="https://upstatement.com"
+					href={companyWebsite}
 					target="_blank"
 					rel="noreferrer noopener"
-					aria-label="Lead Engineer at Upstatement (opens in a new tab)"
+					aria-label="{role} at {companyName} (opens in a new tab)"
 					><span
 						class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
 					></span><span

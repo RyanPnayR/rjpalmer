@@ -12,96 +12,29 @@ aria-label="About me"
 </div>
 <div>
   <p class="mb-4">
-    Back in 2012, I decided to try my hand at creating custom Tumblr themes and
-    tumbled head first into the rabbit hole of coding and web development.
-    Fast-forward to today, and I’ve had the privilege of building software for an <a
-      class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-      href="https://us.mullenlowe.com/"
-      target="_blank"
-      rel="noreferrer noopener"
-      aria-label="advertising agency (opens in a new tab)">advertising agency</a
-    >, a
-    <a
-      class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-      href="https://starry.com/"
-      target="_blank"
-      rel="noreferrer noopener"
-      aria-label="start-up (opens in a new tab)">start-up</a
-    >, a
-    <a
-      class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-      href="https://scout.camd.northeastern.edu/"
-      target="_blank"
-      rel="noreferrer noopener"
-      aria-label="student-led design studio (opens in a new tab)"
-      >student-led design studio</a
-    >, and a
-    <a
-      class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-      href="https://www.apple.com/apple-music/"
-      target="_blank"
-      rel="noreferrer noopener"
-      aria-label="huge corporation (opens in a new tab)">huge corporation</a
-    >.
+    The first Hello World I ever wrote was in a 9th grade elective class in <a
+    class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+    href="https://en.wikipedia.org/wiki/Racket_(programming_language)"
+    target="_blank"
+    rel="noreferrer noopener"
+    aria-label="Racket programming_language (opens in a new tab)"
+    >Racket</a>. This led to taking 3 more classes learning the fundamentals of loops, variables, code testing, and making 8 bit video games. Since then I've had the privilege of building out software for an insurance company, 4 start ups, and a lot of interesting projects in between.  
   </p>
+
   <p class="mb-4">
-    My main focus these days is building products and leading projects for our clients
-    at <a
-      class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-      href="https://upstatement.com/"
-      target="_blank"
-      rel="noreferrer noopener"
-      aria-label="Upstatement (opens in a new tab)">Upstatement</a
-    >. I most enjoy building software in the sweet spot where design and engineering
-    meet — things that look good but are also built well under the hood. In my free
-    time, I've also released an
-    <a
-      class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
-      target="_blank"
-      rel="noreferrer noopener"
-      aria-label="online video course (opens in a new tab)">online video course</a
-    > that covers everything you need to know to build a web app with the Spotify API.
+    Currently seeking an engaging fullstack or frontend role using a more modern stack using these prefered Languages, Frameworks, DBs: <br> 
   </p>
-  <p>
-    When I’m not at the computer, I’m usually rock climbing, reading, hanging out with
-    my wife and two cats, or running around Hyrule searching for <span
-      class="group/korok inline-flex lg:cursor-[url('/images/koroks/Elma.png'),_pointer] lg:font-medium lg:text-slate-200"
-      ><span class="sr-only">Korok seeds</span><span
-        class="transition delay-[50ms] duration-75 group-hover/korok:-translate-y-px group-hover/korok:text-red-400"
-        aria-hidden="true">K</span
-      ><span
-        class="transition delay-[75ms] duration-75 group-hover/korok:-translate-y-px group-hover/korok:text-orange-400"
-        aria-hidden="true">o</span
-      ><span
-        class="transition delay-[100ms] duration-75 group-hover/korok:-translate-y-px group-hover/korok:text-yellow-400"
-        aria-hidden="true">r</span
-      ><span
-        class="transition delay-[125ms] duration-75 group-hover/korok:-translate-y-px group-hover/korok:text-lime-400"
-        aria-hidden="true">o</span
-      ><span
-        class="transition delay-[150ms] duration-75 group-hover/korok:-translate-y-px group-hover/korok:text-green-400"
-        aria-hidden="true">k</span
-      ><span
-        class="transition delay-[175ms] duration-75 group-hover/korok:-translate-y-px group-hover/korok:text-teal-400"
-        aria-hidden="true">&nbsp;</span
-      ><span
-        class="transition delay-[200ms] duration-75 group-hover/korok:-translate-y-px group-hover/korok:text-cyan-400"
-        aria-hidden="true">s</span
-      ><span
-        class="transition delay-[225ms] duration-75 group-hover/korok:-translate-y-px group-hover/korok:text-sky-400"
-        aria-hidden="true">e</span
-      ><span
-        class="transition delay-[250ms] duration-75 group-hover/korok:-translate-y-px group-hover/korok:text-blue-400"
-        aria-hidden="true">e</span
-      ><span
-        class="transition delay-[275ms] duration-75 group-hover/korok:-translate-y-px group-hover/korok:text-indigo-400"
-        aria-hidden="true">d</span
-      ><span
-        class="transition delay-[300ms] duration-75 group-hover/korok:-translate-y-px group-hover/korok:text-violet-400"
-        aria-hidden="true">s</span
-      ></span
-    >.
-  </p>
+  <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+    {#each ['React', 'Svelte', 'Next.js', 'Flutter', 'Python', 'Kotlin', 'Postgres', 'MongoDB', 'MySql', 'SQLite'] as tech}
+      <li class="mr-1.5 mt-2">
+        <div
+          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+        >
+          {tech}
+        </div>
+      </li>
+    {/each}
+  </ul>
+
 </div>
 </section>
