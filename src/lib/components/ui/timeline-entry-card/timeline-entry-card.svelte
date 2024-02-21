@@ -1,7 +1,8 @@
 <script lang="ts">
-	import type { HTMLAttributes } from 'svelte/elements';
+	import CilArrowTop from '~icons/cil/arrow-top';
 
-	export let timeFrame = 'Month year — Present';
+	export let start = 'Month year';
+	export let end = 'Present';
 	export let role = 'The Job';
 	export let companyName = 'Company Name';
 	export let description =
@@ -20,9 +21,10 @@
 	></div>
 	<header
 		class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-		aria-label="2018 to Present"
+		aria-label="{start} — {end}"
 	>
-		{timeFrame}
+		{end}  <br> <CilArrowTop class="ml-6 mt-1 mb-1" />
+		{start}
 	</header>
 	<div class="z-10 sm:col-span-6">
 		<h3 class="font-medium leading-snug text-slate-200">
