@@ -3,18 +3,7 @@
 	export let title = '';
 	export let description = '';
 	export let photoSrcSet = '';
-	export let technologies = [
-		'Javascript',
-		'TypeScript',
-		'HTML & SCSS',
-		'React',
-		'Next.js',
-		'React Native',
-		'WordPress',
-		'Contentful',
-		'Node.js',
-		'PHP'
-	];
+	export let technologies = [	];
 </script>
 
 <div
