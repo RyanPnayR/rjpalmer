@@ -16,11 +16,29 @@
 			and modernized web chat app with 0 downtime in 6 months.
 		</p>
 
-		<p class="mb-4">
+		<p class="mb-6">
 			Presently in pursuit of an enriching opportunity within fullstack or frontend development,
 			harnessing modern technolody stacks to drive impactful solutions. Eager to
 			contribute my expertise in designing and implementing scalable systems, optimizing user
 			experiences, and leading collaborative efforts towards innovation and success.
 		</p>
+
+		<div class="">
+
+			<h2 class="text-sm font-bold uppercase tracking-widest text-slate-200">Skills</h2>
+				<ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+					{#each ['Kotlin', 'JavaScript', 'TypeScript', 'Python', 'Flutter', 'Dart', 'C#', 'Node', 'React', 'Angular', 'Svelte', 'jQuery', 'Redux', 'Django', 'Flask', '.NET', 'Postgres', 'Mongo', 'MySql', 'GraphQL', 'SQLite', 'AWS', 'GCP', 'Cloud Computing', 'CI/CD', 'Cypress', 'Linode', 'Netlify', 'Github/GitLab', 'Jenkins', 'Unit Testing', 'Lambda', 'OOP', 'SaaS', 'PaaS', 'Microservices', 'Distributed Systems', 'Frontend', 'Backend', 'Full-Stack', 'Collaborative', 'Problem Solving', 'English'] as tech}
+						<li class="mr-1.5 mt-2">
+							<div
+								class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+							>
+								{tech}
+							</div>
+						</li>
+					{/each}
+				</ul>
+		</div>
+
+		
 	</div>
 </section>

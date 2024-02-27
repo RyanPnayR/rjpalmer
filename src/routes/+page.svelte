@@ -77,7 +77,6 @@
 			<div
 				use:viewport
 				on:enterViewport={() => changeActiveSection("experience")}
-
 			>
 				<Experience />
 			</div>
@@ -88,13 +87,6 @@
 
 			>
 				<Projects />
-			</div>
-			<div
-				use:viewport
-				on:enterViewport={() => changeActiveSection("skills")}
-				on:exitViewport={() => changeActiveSection("projects")}
-			>
-				<Blog />
 			</div>
 			<Footer />
 		</main>
