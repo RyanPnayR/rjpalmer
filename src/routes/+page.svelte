@@ -1,13 +1,48 @@
 <script lang="ts">
-  import * as Card from "$lib/components/ui/card";
-  import { goto } from '$app/navigation';
-  import Header from './coder/header-section.svelte';
+	import * as Card from '$lib/components/ui/card';
+	import { goto } from '$app/navigation';
+	import Header from './coder/header-section.svelte';
 	import About from './coder/about-section.svelte';
 	import Experience from './coder/expierence-section.svelte';
 	import Projects from './coder/project-section.svelte';
 	import Blog from './coder/blog-section.svelte';
 	import Footer from './coder/footer-section.svelte';
+	import { setContext } from 'svelte';
+	import { writable } from 'svelte/store';
+
+	import { activeSection } from '../stores.js';
+
+	let intersectionObserver;
+
+	function ensureIntersectionObserver() {
+		if (intersectionObserver) return;
+
+		intersectionObserver = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				const eventName = entry.isIntersecting ? 'enterViewport' : 'exitViewport';
+				entry.target.dispatchEvent(new CustomEvent(eventName));
+			});
+		});
+	}
+
+	function viewport(element) {
+		ensureIntersectionObserver();
+
+		intersectionObserver.observe(element);
+
+		return {
+			destroy() {
+				intersectionObserver.unobserve(element);
+			}
+		};
+	}
+
+  function changeActiveSection(section) {
+    console.log('hit', section)
+    activeSection.set(section);
+  }
 </script>
+
 <!-- <div class="grid place-items-center grid-cols-2 gap-1 h-screen">
 <Card.Root on:click={()=>goto('/coder')}>
   <Card.Content>
@@ -32,10 +67,35 @@
 	<div class="lg:flex lg:justify-between lg:gap-4">
 		<Header />
 		<main id="content" class="pt-24 lg:w-1/2 lg:py-24">
-			<About />
-			<Experience />
-			<Projects />
-			<Blog />
+			<div
+				use:viewport
+				on:enterViewport={() => changeActiveSection("about")}
+				on:exitViewport={() => changeActiveSection("experience")}
+			>
+				<About />
+			</div>
+			<div
+				use:viewport
+				on:enterViewport={() => changeActiveSection("experience")}
+
+			>
+				<Experience />
+			</div>
+			<div
+				use:viewport
+				on:enterViewport={() => changeActiveSection("projects")}
+				on:exitViewport={() => changeActiveSection("experience")}
+
+			>
+				<Projects />
+			</div>
+			<div
+				use:viewport
+				on:enterViewport={() => changeActiveSection("skills")}
+				on:exitViewport={() => changeActiveSection("projects")}
+			>
+				<Blog />
+			</div>
 			<Footer />
 		</main>
 	</div>
