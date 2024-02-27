@@ -35,9 +35,8 @@
 			<About />
 			<Experience />
 			<Projects />
-			<!-- <Blog /> -->
+			<Blog />
 			<Footer />
 		</main>
 	</div>
 </div>
-
