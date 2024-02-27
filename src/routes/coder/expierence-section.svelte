@@ -1,6 +1,6 @@
 <script lang="ts">
 	import TimelineEntryCard from '$lib/components/ui/timeline-entry-card/timeline-entry-card.svelte';
-	import resume from '$lib/assests/Resume_Ryan_Palmer.pdf';
+	import resume from '$lib/assests/ResumeRyanPalmer.pdf';
 </script>
 
 <section
@@ -23,8 +23,9 @@
 					end="2023 Mar"
 					role="Senior Software Engineer"
 					companyName="Level Technology"
-					description="Built out modern online banking solutions for gig workers via Plaid,
-					Unit, and Argyle. Set up automated syncs for customer support for tools like Zendesk and Hubspot with our private systems."
+					description="Designed and implemented a scalable distributed backend composed of AWS SAM lambda functions and a Kotlin rest api that served and handled requests for thousands of gig workers online banking needs, background checks, and tax services. 
+					Improved customer acquisition in the onboarding process from 40% to 73% via a simplified signup workflow. Leading to quicker signups, preapprovals, and easier background checks.
+					Created automated syncs for customer support to load customer data from Levels system into Zendesk that would seamlessly come up when a customer called in."
 					technologies={['React', 'Kotlin', 'Python', 'AWS', 'Postgres']}
 					companyWebsite="https://www.levelgoals.com"
 				></TimelineEntryCard>
@@ -35,7 +36,8 @@
 					end="Jun 2022"
 					role="Senior Software Engineer"
 					companyName="Live Person/Tenfold"
-					description="Lead a team of engineers to build out Tenfold's Webex phone integration. Developed transcribing live agent calls to Salesforce with a custom integration."
+					description="Lead a team of engineers to build out a phone integration for Webex expanding Tenfold's customer support system platform. Driving the acquisition of new business that are using modern online phone systems.
+					Developed a live call transcribing integration that would log live speech to text of calls into support tickets in sales force."
 					technologies={['Angular', 'Express', 'Node.js', 'GCP', 'AWS', 'MongoDB']}
 					companyWebsite="https://www.tenfold.com"
 				></TimelineEntryCard>
@@ -46,7 +48,9 @@
 					end="Jul 2021"
 					role="Full Stack Software Engineer"
 					companyName="Redeapp"
-					description="Performed web app migration from Angular.js to modern angular and established end too end testing in cypress. Lead Redeapp's Android development by building out, testing, and deploying changes for their messaging platform."
+					description="Improved app performance and development cycles by migrating and modernizing web chat app from Angular.js to Angular 13 in 6 months, using a duplicate app and iterative approach.
+					Utilized Cypress for end-to-end testing, achieving 70% code coverage and improving user experience, resulting in increased customer satisfaction and application stability.
+					Lead development of Android app, adding new features & keeping it in sync with IOS & web."
 					technologies={['Angular', 'Kotlin', 'Java', 'Python', 'AWS', 'Postgres', 'Android']}
 					companyWebsite="https://www.redeapp.com"
 				></TimelineEntryCard>
@@ -57,7 +61,8 @@
 					end="Jun 2022"
 					role="Software Engineer"
 					companyName="Level 12"
-					description="Created new and maintained old web apps for a consulting firm withing strict timeframes and budgets. Maintained product quality by keeping at least 90% automated tests coverage."
+					description="Worked as a part of a team of developers creating and updating python web applications for a consulting firm. Completing all work within strict timeframes and budgets maintaining product quality by keeping at least 90% automated tests coverage.
+					Redeapp was one of the clients and they hired me to be part of their team because of the 3 months of work I had done for them."
 					technologies={['Python', 'React', 'Linode', 'SQLAlchemy', 'Postgres']}
 					companyWebsite="https://www.level12.io"
 				></TimelineEntryCard>
@@ -68,9 +73,8 @@
 					end="Oct 2017"
 					role="Senior Software Engineer"
 					companyName="Astronomer"
-					description="Created and maintained containerized Node.js integrations and libraries for Astronomers open sourced Analytics.js
-					Platform. Designed Airflow data pipelines written in Node.js and python connecting external data sources to databases sending up
-					to millions of events with test coverage in Mocha, Chai, and Nock."
+					description="Created and maintained containerized Node.js integrations and libraries for Astronomers open sourced Analytics.js Platform.
+					Designed Airflow data pipelines written in Node.js and python connecting external data sources to databases sending up to millions of events with test coverage in Mocha, Chai, and Nock."
 					technologies={[
 						'Javascript',
 						'Express',
