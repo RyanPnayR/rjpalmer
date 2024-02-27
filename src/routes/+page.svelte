@@ -66,7 +66,7 @@
 	>
 	<div class="lg:flex lg:justify-between lg:gap-4">
 		<Header />
-		<main id="content" class="pt-24 lg:w-1/2 lg:py-24">
+		<main id="content" class="pt-24 lg:w-5/6 lg:py-24">
 			<div
 				use:viewport
 				on:enterViewport={() => changeActiveSection("about")}

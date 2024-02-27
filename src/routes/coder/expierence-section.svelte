@@ -19,8 +19,8 @@
 		<ol class="group/list">
 			<li class="mb-12">
 				<TimelineEntryCard
-					start="2022 Apr"
-					end="2023 Mar"
+					start="Apr 2022"
+					end="Mar 2023"
 					role="Senior Software Engineer"
 					companyName="Level Technology"
 					description="Designed and implemented a scalable distributed backend composed of AWS SAM lambda functions and a Kotlin rest api that served and handled requests for thousands of gig workers online banking needs, background checks, and tax services. 
