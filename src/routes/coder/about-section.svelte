@@ -10,7 +10,7 @@
 	</div>
 	<div>
 		<p class="mb-4">
-			Total 6+ years exp. Senior Software Engineer with a proven track record of driving customer
+			Total 7+ years exp. Senior Software Engineer with a proven track record of driving customer
 			acquisition and simplifying processes. Increased onboarding rate by 33% in 1 year. Built
 			scalable backends, automated data syncs for customer support, created live call transcription,
 			and modernized web chat app with 0 downtime in 6 months.
