@@ -57,8 +57,8 @@
 			</li>
 			<li class="mb-12">
 				<TimelineEntryCard
-					start="Jul 2021"
-					end="Jun 2022"
+					start="Jan 2018"
+					end="Feb 2019"
 					role="Software Engineer"
 					companyName="Level 12"
 					description="Worked as a part of a team of developers creating and updating python web applications for a consulting firm. Completing all work within strict timeframes and budgets maintaining product quality by keeping at least 90% automated tests coverage.
