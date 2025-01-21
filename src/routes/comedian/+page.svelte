@@ -14,7 +14,7 @@ body {
   overflow: hidden;
 }
 
-.container {
+.spin-container {
   width: 500px;
   height: 500px;
   background-color: #ccc;
@@ -25,7 +25,7 @@ body {
   transition: 5s;
 }
 
-.container div {
+.spin-container div {
   height: 50%;
   width: 50%;
   position: absolute;
@@ -37,18 +37,18 @@ body {
   transform-origin: bottom right;
 }
 
-.container .one {
+.spin-container .one {
   background-color: #3f51b5;
   clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
-.container .two {
+.spin-container .two {
   background-color: #ff9800;
 }
-.container .three {
+.spin-container .three {
   background-color: #e91e63;
 }
 
-.container .four {
+.spin-container .four {
   background-color: green;
 }
 
@@ -86,41 +86,47 @@ body {
   letter-spacing: 1px;
 }
 
-.container div span {
+.spin-container div span {
   rotate: -45deg;
   color: white;
   font-weight: 900;
 }
 </style>
 
-<script lang="ts">
+<script lang="js">
+  import { onMount } from 'svelte';
   import * as Card from "$lib/components/ui/card";
-let container = document.querySelector(".container");
-let btn = document.getElementById("spin");
-let number = Math.ceil(Math.random() * 10000);
 
-btn.onclick = function () {
-  container.style.transform = "rotate(" + number + "deg)";
-  number += Math.ceil(Math.random() * 10000);
-  container.addEventListener("transitionend", SelectWinningAnswer(), false);
-};
+  let container;
+  let btn;
+  let number;
 
-function SelectWinningAnswer() {
-  const targetElement = document.querySelector(".arrow");
+  onMount(() => {
+    container = document.querySelector(".spin-container");
+    btn = document.getElementById("spin");
+    number = Math.ceil(Math.random() * 10000);
 
-  const otherElements = document.querySelectorAll(".option");
-  const elementRect = targetElement.getBoundingClientRect();
-  let topElement = otherElements[0];
-  for (const otherElement of otherElements) {
-    const otherRect = otherElement.getBoundingClientRect();
-    topElement =
-      topElement.getBoundingClientRect().top < otherRect.top
-        ? topElement
-        : otherElement;
+    btn.onclick = function () {
+      container.style.transform = "rotate(" + number + "deg)";
+      number += Math.ceil(Math.random() * 10000);
+      container.addEventListener("transitionend", SelectWinningAnswer, false);
+    };
+  });
+
+  function SelectWinningAnswer() {
+    const targetElement = document.querySelector(".arrow");
+
+    const otherElements = document.querySelectorAll(".option");
+    let topElement = otherElements[0];
+    for (const otherElement of otherElements) {
+      const otherRect = otherElement.getBoundingClientRect();
+      topElement =
+        topElement.getBoundingClientRect().top < otherRect.top
+          ? topElement
+          : otherElement;
+    }
+    console.log(topElement.textContent);
   }
-  console.log(topElement.textContent);
-}
-
 </script>
 
 <div class="grid place-items-center grid-cols-1 gap-1 h-screen">
@@ -135,7 +141,7 @@ function SelectWinningAnswer() {
 <body>
   <button id="spin"> <span class="arrow"></span>Spin</button>
 
-  <div class="container">
+  <div class="spin-container">
     <div class="option one" style="--i:1"><span>Speak No Evil</span></div>
     <div class="option two" style="--i:2"><span>Hear No Evil</span></div>
     <div class="option three" style="--i:3"><span>See No Evil</span></div>
