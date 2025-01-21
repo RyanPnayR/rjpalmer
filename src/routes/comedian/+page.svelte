@@ -142,6 +142,4 @@ function SelectWinningAnswer() {
     <div class="option four" style="--i:4"><span>Host Pick</span></div>
   </div>
 </body>
-
-</html>
 </div>
